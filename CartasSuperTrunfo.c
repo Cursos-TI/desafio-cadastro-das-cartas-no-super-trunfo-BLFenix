@@ -6,6 +6,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -15,15 +16,16 @@ int main() {
     float Area;
     float PIB;
     int NumPonTuristicos;
+    int CriarCidade = 1;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     printf ("Seja bem vindo ao Super Trunfo!");
     printf ("\nPara iniciar, defina os dados da Cidade:");
-
+    
     printf ("\nNome: ");
-    scanf (" %s", Nome);
+    scanf (" %[^\n]", Nome);
 
     printf ("\nPopulação: ");
     scanf (" %d", &Populacao);
